@@ -2,11 +2,9 @@ package Com.MyTraining.Polymorphism;
 
 public class Movie {
     private String name;
-    private double length;
 
-    public Movie(String name, double length) {
+    public Movie(String name) {
         this.name = name;
-        this.length = length;
     }
     public String plot(){
         return "No plot here";
@@ -15,74 +13,62 @@ public class Movie {
     public String getName() {
         return name;
     }
-
-    public double getLength() {
-        return length;
-    }
 }
 
-
-class Titanic extends Movie{
-
-    public Titanic(String name, double length) {
-        super(name, length);
+class Jaws extends Movie{
+    public Jaws(){
+        super("Jaws");
     }
 
     @Override
     public String plot() {
-        return "A movie about a ship with a tragic end!";
-    }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public double getLength() {
-        return super.getLength();
+        return "Shark movie!";
     }
 }
 
 class Alien extends Movie{
-    public Alien(String name, double length) {
-        super(name, length);
+    public Alien(){
+        super("Alien");
     }
 
     @Override
     public String plot() {
-        return "A movie about a cargoship in space finding an alien egg and a bunch of bad luck";
-    }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public double getLength() {
-        return super.getLength();
+        return "Aliens on a cargo ship!";
     }
 }
 
-class Greace extends Movie{
-    public Greace(String name, double length) {
-        super(name, length);
+class IndependenceDay extends Movie{
+    public IndependenceDay(){
+        super("Independence Day");
     }
 
     @Override
     public String plot() {
-        return "A movie about dancing people in a very awkward realtionship";
-    }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public double getLength() {
-        return super.getLength();
+        return "Aliens try to take over the world!";
     }
 }
+
+class StarWars extends Movie{
+    public StarWars(){
+        super("Star Wars");
+    }
+
+    @Override
+    public String plot() {
+        return "Imperial forces try to take over universe!";
+    }
+}
+
+class Forgettable extends Movie{
+    public Forgettable(){
+        super("Forgettable");
+    }
+
+    @Override
+    public String plot() {
+        return super.plot();
+    }
+}
+
+
 
