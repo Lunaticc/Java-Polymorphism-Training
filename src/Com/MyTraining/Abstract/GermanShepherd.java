@@ -27,6 +27,13 @@ public class GermanShepherd extends Dog{
         return "GermanShepherd{" +
                 "coating='" + coating + '\'' +
                 ", description='" + description + '\'' +
-                ", legs="+ super.getLegs() +  '}';
+                superGet() + '}';
+    }//Legs tail eyes head
+
+    private String superGet(){
+        return ", legs='" + super.getLegs() + '\'' +
+                ", tail='" + super.getTail() + '\'' +
+                ", eyes='" + super.getEyes() + '\'' +
+                ", head='" + super.getHead();
     }
 }
