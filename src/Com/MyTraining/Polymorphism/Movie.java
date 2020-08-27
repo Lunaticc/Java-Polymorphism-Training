@@ -13,48 +13,62 @@ public class Movie {
     public String getName() {
         return name;
     }
-
 }
 
-
-class Titanic extends Movie{
-
-    public Titanic(String name) {
-        super(name);
+class Jaws extends Movie{
+    public Jaws(){
+        super("Jaws");
     }
 
     @Override
     public String plot() {
-        return "A movie about a ship with a tragic end!";
+        return "Shark movie!";
     }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
 }
 
 class Alien extends Movie{
-    public Alien(String name) {
-        super(name);
+    public Alien(){
+        super("Alien");
     }
 
     @Override
     public String plot() {
-        return "A movie about a cargoship in space finding an alien egg and a bunch of bad luck";
+        return "Aliens on a cargo ship!";
     }
-
 }
 
-class Grease extends Movie{
-    public Grease(){
-        super("Grease");
+class IndependenceDay extends Movie{
+    public IndependenceDay(){
+        super("Independence Day");
     }
 
     @Override
     public String plot() {
-        return "A movie about singing and dancing!";
+        return "Aliens try to take over the world!";
     }
 }
+
+class StarWars extends Movie{
+    public StarWars(){
+        super("Star Wars");
+    }
+
+    @Override
+    public String plot() {
+        return "Imperial forces try to take over universe!";
+    }
+}
+
+class Forgettable extends Movie{
+    public Forgettable(){
+        super("Forgettable");
+    }
+
+    @Override
+    public String plot() {
+        return super.plot();
+    }
+}
+
+
 
