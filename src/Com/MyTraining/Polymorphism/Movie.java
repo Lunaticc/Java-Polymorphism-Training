@@ -2,11 +2,9 @@ package Com.MyTraining.Polymorphism;
 
 public class Movie {
     private String name;
-    private double length;
 
-    public Movie(String name, double length) {
+    public Movie(String name) {
         this.name = name;
-        this.length = length;
     }
     public String plot(){
         return "No plot here";
@@ -16,16 +14,13 @@ public class Movie {
         return name;
     }
 
-    public double getLength() {
-        return length;
-    }
 }
 
 
 class Titanic extends Movie{
 
-    public Titanic(String name, double length) {
-        super(name, length);
+    public Titanic(String name) {
+        super(name);
     }
 
     @Override
@@ -38,15 +33,11 @@ class Titanic extends Movie{
         return super.getName();
     }
 
-    @Override
-    public double getLength() {
-        return super.getLength();
-    }
 }
 
 class Alien extends Movie{
-    public Alien(String name, double length) {
-        super(name, length);
+    public Alien(String name) {
+        super(name);
     }
 
     @Override
@@ -54,35 +45,16 @@ class Alien extends Movie{
         return "A movie about a cargoship in space finding an alien egg and a bunch of bad luck";
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public double getLength() {
-        return super.getLength();
-    }
 }
 
-class Greace extends Movie{
-    public Greace(String name, double length) {
-        super(name, length);
+class Grease extends Movie{
+    public Grease(){
+        super("Grease");
     }
 
     @Override
     public String plot() {
-        return "A movie about dancing people in a very awkward realtionship";
-    }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public double getLength() {
-        return super.getLength();
+        return "A movie about singing and dancing!";
     }
 }
 
