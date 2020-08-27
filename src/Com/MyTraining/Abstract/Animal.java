@@ -11,5 +11,6 @@ public abstract class Animal {
         return name;
     }
 
+    public abstract void sleep();
 
 }

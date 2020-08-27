@@ -6,5 +6,14 @@ public class Main {
 
         System.out.println(dog.getLegs());
         System.out.println(dog);
+
+        GermanShepherd dogo = new GermanShepherd("Black and blue");
+        dogo.setDescription("A jumpy and happy german shepherd");
+        System.out.println(dogo.getHead());
+
+
+
+
+        System.out.println(dogo);
     }
 }
