@@ -11,6 +11,8 @@ public abstract class Animal {
         return name;
     }
 
-    public abstract void sleep();
+    public void sleep(){
+        System.out.println("Zzz...");
+    }
 
 }

@@ -15,5 +15,15 @@ public class Main {
 
 
         System.out.println(dogo);
+
+        Leven leven = Leven.MEDIUM;
+
+        System.out.println(leven);
     }
+}
+
+enum Leven{
+    LOW,
+    MEDIUM,
+    HIGH
 }
